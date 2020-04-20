@@ -19,81 +19,92 @@
 		"oF": 0,
 		"oS": 3
 		},
-	"/deploy/img/circle-mask.png": {
+	"/deploy/img/footer/logo.png": {
 		"ft": 32768,
-		"iS": 211541,
+		"iS": 2765,
 		"oA": 0,
-		"oAP": "/deploy/img/circle-mask.png",
+		"oAP": "/deploy/img/footer/logo.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"/deploy/img/gallery-1.jpg": {
-		"ft": 16384,
-		"iS": 110033,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/deploy/img/gallery-1.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/deploy/img/gallery-2.jpg": {
-		"ft": 16384,
-		"iS": 35659,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/deploy/img/gallery-2.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/deploy/img/gallery-3.jpg": {
-		"ft": 16384,
-		"iS": 28333,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/deploy/img/gallery-3.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/deploy/img/hero-1.jpg": {
+	"/deploy/img/section-1/hero-1.jpg": {
 		"ft": 16384,
 		"iS": 237715,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/deploy/img/hero-1.jpg",
+		"oAP": "/deploy/img/section-1/hero-1.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/deploy/img/hero-2.jpg": {
-		"ft": 16384,
-		"iS": 371325,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/deploy/img/hero-2.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/deploy/img/left-side.jpg": {
+	"/deploy/img/section-2/left-side.jpg": {
 		"ft": 16384,
 		"iS": 136373,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/deploy/img/left-side.jpg",
+		"oAP": "/deploy/img/section-2/left-side.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/section-3/hero-2.jpg": {
+		"ft": 16384,
+		"iS": 371325,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/section-3/hero-2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/section-4/gallery-1.jpg": {
+		"ft": 16384,
+		"iS": 110033,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/section-4/gallery-1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/section-4/gallery-2.jpg": {
+		"ft": 16384,
+		"iS": 35659,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/section-4/gallery-2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/section-4/gallery-3.jpg": {
+		"ft": 16384,
+		"iS": 28333,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/section-4/gallery-3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/section-5/circle-mask.png": {
+		"ft": 32768,
+		"iS": 211541,
+		"oA": 0,
+		"oAP": "/deploy/img/section-5/circle-mask.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
 	"/deploy/index.html": {
@@ -128,8 +139,8 @@
 		"ft": 2048,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/dev/index.html",
-		"oF": 0
+		"oAP": "/deploy/index.html",
+		"oF": 2
 		},
 	"/dev/js/scripts.js": {
 		"bF": 0,
