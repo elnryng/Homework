@@ -1,0 +1,19 @@
+/* =============
+    Section 1
+============= */
+
+#section-1{
+   #title{
+    display: grid;
+    grid-template-columns: 15px auto 15px;
+    grid-template-areas: ". h1 .";
+    
+   }
+    h1{
+        grid-area: h1;
+    }
+    img{
+        width: 100%;
+    }
+
+}

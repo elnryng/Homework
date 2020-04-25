@@ -1,0 +1,32 @@
+/* =============
+    Section 4
+============= */
+
+#section-4{
+    display: grid;
+    grid-template-columns: 15px auto 15px;
+    grid-template-areas: ". h2 .";
+
+    h2{
+        grid-area: h2;
+    }
+}
+
+#section-4-gallery{
+    display: grid;
+    grid-template-columns: 15px auto 15px;
+    grid-template-areas: '. section-4 .';
+
+    ul{
+        grid-area: section-4;
+        display: grid;
+        gap:20px;
+
+        li{
+            img{
+                width: 100%;
+            }
+        }
+    }
+
+}
