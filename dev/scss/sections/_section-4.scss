@@ -2,31 +2,82 @@
     Section 4
 ============= */
 
-#section-4{
+#section-4 {
     display: grid;
     grid-template-columns: 15px auto 15px;
     grid-template-areas: ". h2 .";
 
-    h2{
+    @include xl {
+        grid-template-columns: auto 1200px auto;
+    }
+
+    h2 {
         grid-area: h2;
     }
 }
 
-#section-4-gallery{
+#section-4-gallery {
     display: grid;
     grid-template-columns: 15px auto 15px;
     grid-template-areas: '. section-4 .';
 
-    ul{
+    ul {
         grid-area: section-4;
         display: grid;
-        gap:20px;
+        gap: 20px;
 
-        li{
-            img{
+        @include sm{
+            grid-template-columns: none;
+            grid-template-areas: 
+            "g1"
+            "g2"
+            "g3";
+        }
+
+        @include md {
+            grid-template-columns: repeat(2, 1fr);
+            // grid-template-columns: 50% 50%;
+            // grid-template-columns: 50% auto;
+
+            grid-template-areas:
+                "g1 g1"
+                "g2 g3";
+        }
+
+        @include lg {
+            grid-template-columns: 60% 40%;
+            // grid-template-columns: 50% 50%;
+            // grid-template-columns: 50% auto;
+
+            grid-template-areas:
+                "g1 g2"
+                "g1 g3";
+        }
+
+        li {
+            display: grid;
+            img {
+
                 width: 100%;
+
             }
         }
-    }
 
+        #g1 {
+            grid-area: g1;
+        }
+
+        #g2 {
+
+            grid-area: g2;
+
+        }
+
+        #g3 {
+
+            grid-area: g3;
+
+
+        }
+    }
 }

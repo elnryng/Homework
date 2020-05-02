@@ -369,15 +369,46 @@ textarea {
 /* =============
     Section 2
 ============= */
-#section-2 aside img {
+@media (min-width: 1200px) {
+  #section-2 {
+    display: grid;
+    grid-template-columns: auto 1200px auto;
+    grid-template-areas: ". section-2-desktop ."; } }
+
+@media (min-width: 992px) {
+  #section-2 #section-2-desktop {
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-areas: "section-2-image section-2"; } }
+
+@media (min-width: 768px) {
+  #section-2 #section-2-desktop {
+    display: grid;
+    grid-template-columns: 40% auto;
+    grid-template-areas: "section-2-image section-2"; } }
+
+@media (min-width: 1200px) {
+  #section-2 #section-2-desktop {
+    grid-area: section-2-desktop; } }
+
+#section-2 #section-2-desktop aside img {
   width: 100%; }
 
-#section-2-container {
+#section-2 #section-2-desktop #section-2-container {
   display: grid;
   grid-template-columns: 15px auto 15px;
-  grid-template-areas: ". section-2 ."; }
-  #section-2-container #section-2-content {
-    grid-area: section-2; }
+  grid-template-areas: ". callout ."; }
+  @media (min-width: 768px) {
+    #section-2 #section-2-desktop #section-2-container {
+      grid-template-columns: 10% auto 10%; } }
+  @media (min-width: 1200px) {
+    #section-2 #section-2-desktop #section-2-container {
+      grid-template-columns: auto 1200px auto; } }
+  #section-2 #section-2-desktop #section-2-container #section-2-content {
+    grid-area: callout; }
+
+#section-2 #section-2-desktop #section-2-image {
+  grid-area: section-2-image; }
 
 /* =============
     Section 3
@@ -392,6 +423,9 @@ textarea {
   display: grid;
   grid-template-columns: 15px auto 15px;
   grid-template-areas: ". h2 ."; }
+  @media (min-width: 1200px) {
+    #section-4 {
+      grid-template-columns: auto 1200px auto; } }
   #section-4 h2 {
     grid-area: h2; }
 
@@ -403,23 +437,54 @@ textarea {
     grid-area: section-4;
     display: grid;
     gap: 20px; }
-    #section-4-gallery ul li img {
-      width: 100%; }
+    @media (min-width: 300px) {
+      #section-4-gallery ul {
+        grid-template-columns: none;
+        grid-template-areas: "g1" "g2" "g3"; } }
+    @media (min-width: 768px) {
+      #section-4-gallery ul {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "g1 g1" "g2 g3"; } }
+    @media (min-width: 992px) {
+      #section-4-gallery ul {
+        grid-template-columns: 60% 40%;
+        grid-template-areas: "g1 g2" "g1 g3"; } }
+    #section-4-gallery ul li {
+      display: grid; }
+      #section-4-gallery ul li img {
+        width: 100%; }
+    #section-4-gallery ul #g1 {
+      grid-area: g1; }
+    #section-4-gallery ul #g2 {
+      grid-area: g2; }
+    #section-4-gallery ul #g3 {
+      grid-area: g3; }
 
 /* =============
     Section 5
 ============= */
-#section-5-image {
+#section-5 {
   display: grid;
   grid-template-columns: 15px auto 15px;
-  grid-template-areas: ". image ."; }
-  #section-5-image img {
-    grid-area: image;
-    width: 100%; }
-
-#section-5-content {
-  display: grid;
-  grid-template-columns: 15px auto 15px;
-  grid-template-areas: ". section-5-content ."; }
-  #section-5-content p {
-    grid-area: section-5-content; }
+  grid-template-areas: ". section-5 ."; }
+  @media (min-width: 1200px) {
+    #section-5 {
+      grid-template-columns: auto 1200px auto; } }
+  #section-5 #section-5-container {
+    display: grid;
+    grid-area: section-5;
+    grid-template-rows: 2;
+    grid-template-areas: "pic" "article"; }
+    @media (min-width: 992px) {
+      #section-5 #section-5-container {
+        grid-template-columns: 30% 70%;
+        grid-template-areas: "pic article"; } }
+    #section-5 #section-5-container #section-5-image {
+      grid-area: pic; }
+      #section-5 #section-5-container #section-5-image img {
+        width: 100%; }
+      @media (min-width: 768px) {
+        #section-5 #section-5-container #section-5-image {
+          justify-content: center; } }
+    #section-5 #section-5-container #section-5-article {
+      grid-area: article; }
