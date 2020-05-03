@@ -15,9 +15,11 @@
         display: grid;
         grid-area: section-5;
         grid-template-rows: 2;
+        align-items: center;
         grid-template-areas: 
         "pic"
         "article";
+        grid-gap: 20px;
         // @include md {
         //     grid-template-rows: 2;
         // }

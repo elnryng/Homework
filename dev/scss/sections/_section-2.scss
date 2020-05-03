@@ -46,6 +46,8 @@
             display: grid;
             grid-template-columns: 15px auto 15px;
             grid-template-areas: ". callout .";
+            align-items: center;
+            grid-gap: 20px;
 
             @include md{
                 grid-template-columns: 10% auto 10%;
@@ -55,10 +57,10 @@
                 grid-template-columns: auto 1200px auto;
             }
 
-            #section-2-content {
-                grid-area: callout;
-            }
-
+            
+        }
+        #section-2-content {
+            grid-area: callout;
         }
 
         #section-2-image {

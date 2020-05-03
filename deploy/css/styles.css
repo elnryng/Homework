@@ -397,15 +397,17 @@ textarea {
 #section-2 #section-2-desktop #section-2-container {
   display: grid;
   grid-template-columns: 15px auto 15px;
-  grid-template-areas: ". callout ."; }
+  grid-template-areas: ". callout .";
+  align-items: center;
+  grid-gap: 20px; }
   @media (min-width: 768px) {
     #section-2 #section-2-desktop #section-2-container {
       grid-template-columns: 10% auto 10%; } }
   @media (min-width: 1200px) {
     #section-2 #section-2-desktop #section-2-container {
       grid-template-columns: auto 1200px auto; } }
-  #section-2 #section-2-desktop #section-2-container #section-2-content {
-    grid-area: callout; }
+#section-2 #section-2-desktop #section-2-content {
+  grid-area: callout; }
 
 #section-2 #section-2-desktop #section-2-image {
   grid-area: section-2-image; }
@@ -474,7 +476,9 @@ textarea {
     display: grid;
     grid-area: section-5;
     grid-template-rows: 2;
-    grid-template-areas: "pic" "article"; }
+    align-items: center;
+    grid-template-areas: "pic" "article";
+    grid-gap: 20px; }
     @media (min-width: 992px) {
       #section-5 #section-5-container {
         grid-template-columns: 30% 70%;
