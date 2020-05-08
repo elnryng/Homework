@@ -6,9 +6,19 @@
     display: grid;
     grid-template-columns: 15px auto 15px;
     grid-template-areas: ". section-5 .";
+    margin-top: 40px;
 
     @include xl {
         grid-template-columns: auto 1200px auto;
+        margin-top: 50px;
+    }
+
+    @include lg {
+        margin-top: 50px;
+    }
+
+    @include md {
+        margin-top: 50px;
     }
 
     #section-5-container {
@@ -16,9 +26,9 @@
         grid-area: section-5;
         grid-template-rows: 2;
         align-items: center;
-        grid-template-areas: 
-        "pic"
-        "article";
+        grid-template-areas:
+            "pic"
+            "article";
         grid-gap: 20px;
         // @include md {
         //     grid-template-rows: 2;
@@ -29,32 +39,81 @@
             grid-template-areas: "pic article";
         }
 
-        #section-5-image {
-            grid-area: pic;
 
-            img {
-                width: 100%;
+    }
+
+    #section-5-image {
+        display: flex;
+        grid-area: pic;
+        justify-content: center;
+
+        @include md {
+            justify-content: center;
+
+            aside {
+                
+
+                img {
+                    
+                    width: 100%;
+
+                    @include md {
+                        display: flex;
+                        grid-area: circle-image;
+                        width: 318px;
+                        
+                    }
+
+                    //     align-content: center;
+                    // }
+                }
+
+                // @include md {
+                //     justify-content: center;
+
+                // }
+
+                // //  }
+
             }
 
-            @include md{
-                justify-content: center;
-            }
+            #section-5-article {
+                //display: grid;
+                grid-area: article;
 
-            // //  }
-            // grid-template-columns: 15px auto 15px;
-            // grid-template-areas: ". pic .";
+                
+                
+                // grid-template-columns: 15px auto 15px;
+                // grid-template-areas: ". paragraph .";
+
+                // p {
+                //     grid-area: paragraph;
+                // }
+
+            }
+        }
+    }
+    p{
+        @include sm{
+            font-size: rem-calc(16);
+            line-height: rem-calc(30);
         }
 
-        #section-5-article {
-            //display: grid;
-            grid-area: article;
-            // grid-template-columns: 15px auto 15px;
-            // grid-template-areas: ". paragraph .";
+        @include md{
+            font-size: rem-calc(16);
+            line-height: rem-calc(30);
+            padding-left: 60px;
+            padding-right: 60px;
+        }
 
-            // p {
-            //     grid-area: paragraph;
-            // }
+        @include lg{
+            font-size: rem-calc(16);
+            line-height: rem-calc(30);
+        }
 
+        @include xl{
+            font-size: rem-calc(16);
+            line-height: rem-calc(30);
         }
     }
 }

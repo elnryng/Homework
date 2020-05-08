@@ -3,9 +3,24 @@
 ============= */
 
 #section-3{
-    
+    margin-top: 32px;
+
+    background-image: url(../img/section-3/hero-2.jpg);
+    height: 80vh;
+    background-size: cover;
+
     img{
         width: 100%;
     }
+@include md{
+    height: 50vh;
+}
 
+@include lg{
+    height: 50vh;
+}
+
+@include xl{
+    height: 60vh;
+}
 }

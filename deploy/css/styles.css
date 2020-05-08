@@ -325,6 +325,14 @@ ul {
 /* =============
     Typography
 ============= */
+h3, h2 {
+  font-family: 'Playfair Display', serif;
+  color: #A14A39; }
+
+h5, p {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 300; }
+
 /* =============
     Buttons
 ============= */
@@ -352,89 +360,198 @@ textarea {
 /* =============
     Footer
 ============= */
+#footer {
+  background-color: #A14A39; }
+  #footer ul {
+    margin-top: 50;
+    margin-bottom: 0;
+    margin-left: 50%;
+    background-color: #A14A39;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    color: white; }
+    #footer ul img {
+      display: flex;
+      margin-top: 10px;
+      margin-bottom: 10px; }
+
 /* =============
     Section 1
 ============= */
-#section-1 #title {
-  display: grid;
-  grid-template-columns: 15px auto 15px;
-  grid-template-areas: ". h1 ."; }
-
-#section-1 h1 {
-  grid-area: h1; }
-
-#section-1 img {
+#section-1 {
+  background-image: url("../img/section-1/hero-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 50vh;
   width: 100%; }
-
+  @media (min-width: 768px) {
+    #section-1 {
+      height: 60vh; } }
+  @media (min-width: 992px) {
+    #section-1 {
+      height: 70vh; } }
+  @media (min-width: 1200px) {
+    #section-1 {
+      height: 70vh; } }
 /* =============
     Section 2
 ============= */
-@media (min-width: 1200px) {
-  #section-2 {
-    display: grid;
-    grid-template-columns: auto 1200px auto;
-    grid-template-areas: ". section-2-desktop ."; } }
-
-@media (min-width: 992px) {
-  #section-2 #section-2-desktop {
-    display: grid;
-    grid-template-columns: 50% auto;
-    grid-template-areas: "section-2-image section-2"; } }
-
-@media (min-width: 768px) {
-  #section-2 #section-2-desktop {
-    display: grid;
-    grid-template-columns: 40% auto;
-    grid-template-areas: "section-2-image section-2"; } }
-
-@media (min-width: 1200px) {
-  #section-2 #section-2-desktop {
-    grid-area: section-2-desktop; } }
-
-#section-2 #section-2-desktop aside img {
-  width: 100%; }
-
-#section-2 #section-2-desktop #section-2-container {
+#section-2 {
   display: grid;
   grid-template-columns: 15px auto 15px;
-  grid-template-areas: ". callout .";
-  align-items: center;
-  grid-gap: 20px; }
-  @media (min-width: 768px) {
-    #section-2 #section-2-desktop #section-2-container {
-      grid-template-columns: 10% auto 10%; } }
+  grid-template-areas: ". section-2-desktop ."; }
   @media (min-width: 1200px) {
+    #section-2 {
+      display: grid;
+      grid-template-columns: auto 1200px auto;
+      grid-template-areas: ". section-2-desktop ."; } }
+  #section-2 #section-2-desktop {
+    grid-area: section-2-desktop;
+    margin-top: 60px;
+    display: grid; }
+    @media (min-width: 300px) {
+      #section-2 #section-2-desktop {
+        display: grid;
+        grid-template-comlumns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: "callout" "section-2-image" "section-2-image"; } }
+    @media (min-width: 992px) {
+      #section-2 #section-2-desktop {
+        display: grid;
+        grid-template-columns: 50% auto;
+        grid-template-rows: 1fr;
+        grid-template-areas: "section-2-image section-2";
+        margin-top: 55px; } }
+    @media (min-width: 768px) {
+      #section-2 #section-2-desktop {
+        display: grid;
+        grid-template-columns: 40% auto;
+        grid-template-rows: 1fr;
+        grid-template-areas: " section-2-image section-2 ";
+        margin-top: 53px; } }
+    @media (min-width: 1200px) {
+      #section-2 #section-2-desktop {
+        grid-area: section-2-desktop;
+        grid-template-rows: 1fr;
+        margin-top: 53px; } }
+    #section-2 #section-2-desktop aside img {
+      width: 100%; }
     #section-2 #section-2-desktop #section-2-container {
-      grid-template-columns: auto 1200px auto; } }
-#section-2 #section-2-desktop #section-2-content {
-  grid-area: callout; }
-
-#section-2 #section-2-desktop #section-2-image {
-  grid-area: section-2-image; }
+      display: grid;
+      grid-template-columns: 15px auto 15px;
+      grid-template-areas: ". callout .";
+      align-items: center; }
+      @media (min-width: 768px) {
+        #section-2 #section-2-desktop #section-2-container {
+          grid-template-columns: 10% auto 10%; } }
+    #section-2 #section-2-desktop #section-2-content {
+      grid-area: callout; }
+      @media (min-width: 300px) {
+        #section-2 #section-2-desktop #section-2-content {
+          margin-bottom: 60px;
+          text-align: center; } }
+  @media (min-width: 300px) and (min-width: 768px) {
+    #section-2 #section-2-desktop #section-2-content {
+      text-align: left; } }
+      #section-2 #section-2-desktop #section-2-content > h3 {
+        color: #A14A39; }
+        @media (min-width: 300px) {
+          #section-2 #section-2-desktop #section-2-content > h3 {
+            font-size: 1.5625rem;
+            line-height: 1.75rem; } }
+        @media (min-width: 768px) {
+          #section-2 #section-2-desktop #section-2-content > h3 {
+            font-size: 2.1875rem;
+            line-height: 2.1875rem; } }
+        @media (min-width: 992px) {
+          #section-2 #section-2-desktop #section-2-content > h3 {
+            font-size: 2.1875rem;
+            line-height: 2.1875rem; } }
+        @media (min-width: 1200px) {
+          #section-2 #section-2-desktop #section-2-content > h3 {
+            font-size: 2.1875rem;
+            line-height: 2.1875rem; } }
+      @media (min-width: 300px) {
+        #section-2 #section-2-desktop #section-2-content > h5 {
+          font-size: 1rem;
+          line-height: 1.5625rem; } }
+      @media (min-width: 768px) {
+        #section-2 #section-2-desktop #section-2-content > h5 {
+          font-size: 1rem;
+          line-height: 1.875rem; } }
+      @media (min-width: 992px) {
+        #section-2 #section-2-desktop #section-2-content > h5 {
+          font-size: 1rem;
+          line-height: 1.875rem; } }
+      @media (min-width: 1200px) {
+        #section-2 #section-2-desktop #section-2-content > h5 {
+          font-size: 1rem;
+          line-height: 1.875rem; } }
+    #section-2 #section-2-desktop aside {
+      grid-area: section-2-image;
+      background-image: url("../img/section-2/left-side.jpg");
+      height: 60vh;
+      background-size: cover; }
 
 /* =============
     Section 3
 ============= */
-#section-3 img {
-  width: 100%; }
-
+#section-3 {
+  margin-top: 32px;
+  background-image: url(../img/section-3/hero-2.jpg);
+  height: 80vh;
+  background-size: cover; }
+  #section-3 img {
+    width: 100%; }
+  @media (min-width: 768px) {
+    #section-3 {
+      height: 50vh; } }
+  @media (min-width: 992px) {
+    #section-3 {
+      height: 50vh; } }
+  @media (min-width: 1200px) {
+    #section-3 {
+      height: 60vh; } }
 /* =============
     Section 4
 ============= */
 #section-4 {
   display: grid;
   grid-template-columns: 15px auto 15px;
-  grid-template-areas: ". h2 ."; }
+  grid-template-areas: ". h2 .";
+  margin-top: 41px; }
   @media (min-width: 1200px) {
     #section-4 {
       grid-template-columns: auto 1200px auto; } }
-  #section-4 h2 {
-    grid-area: h2; }
-
+  #section-4 #pullquote {
+    grid-area: h2;
+    text-align: center; }
+    @media (min-width: 300px) {
+      #section-4 #pullquote h2 {
+        font-size: 1.5625rem;
+        line-height: 2.0625rem; } }
+    @media (min-width: 768px) {
+      #section-4 #pullquote h2 {
+        font-size: 2.1875rem;
+        line-height: 3rem; } }
+    @media (min-width: 992px) {
+      #section-4 #pullquote h2 {
+        font-size: 3.25rem;
+        line-height: 3.9375rem; } }
+    @media (min-width: 1200px) {
+      #section-4 #pullquote h2 {
+        font-size: 3.25rem;
+        line-height: 3.9375rem; } }
 #section-4-gallery {
   display: grid;
   grid-template-columns: 15px auto 15px;
-  grid-template-areas: '. section-4 .'; }
+  grid-template-areas: '. section-4 .';
+  margin-top: 41px; }
+  @media (min-width: 1200px) {
+    #section-4-gallery {
+      grid-template-columns: auto 1200px auto; } }
   #section-4-gallery ul {
     grid-area: section-4;
     display: grid;
@@ -442,24 +559,34 @@ textarea {
     @media (min-width: 300px) {
       #section-4-gallery ul {
         grid-template-columns: none;
+        grid-template-rows: repeat(3, 290px);
         grid-template-areas: "g1" "g2" "g3"; } }
     @media (min-width: 768px) {
       #section-4-gallery ul {
         grid-template-columns: repeat(2, 1fr);
-        grid-template-areas: "g1 g1" "g2 g3"; } }
+        grid-template-rows: repeat(3, 340px);
+        grid-template-areas: "g1 g1" "g1 g1" "g2 g3"; } }
     @media (min-width: 992px) {
       #section-4-gallery ul {
         grid-template-columns: 60% 40%;
+        grid-template-rows: repeat(2, 340px);
+        margin-right: 20px;
         grid-template-areas: "g1 g2" "g1 g3"; } }
     #section-4-gallery ul li {
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
       display: grid; }
       #section-4-gallery ul li img {
         width: 100%; }
     #section-4-gallery ul #g1 {
+      background-image: url(../img/section-4/gallery-1.jpg);
       grid-area: g1; }
     #section-4-gallery ul #g2 {
+      background-image: url(../img/section-4/gallery-2.jpg);
       grid-area: g2; }
     #section-4-gallery ul #g3 {
+      background-image: url(../img/section-4/gallery-3.jpg);
       grid-area: g3; }
 
 /* =============
@@ -468,10 +595,18 @@ textarea {
 #section-5 {
   display: grid;
   grid-template-columns: 15px auto 15px;
-  grid-template-areas: ". section-5 ."; }
+  grid-template-areas: ". section-5 .";
+  margin-top: 40px; }
   @media (min-width: 1200px) {
     #section-5 {
-      grid-template-columns: auto 1200px auto; } }
+      grid-template-columns: auto 1200px auto;
+      margin-top: 50px; } }
+  @media (min-width: 992px) {
+    #section-5 {
+      margin-top: 50px; } }
+  @media (min-width: 768px) {
+    #section-5 {
+      margin-top: 50px; } }
   #section-5 #section-5-container {
     display: grid;
     grid-area: section-5;
@@ -483,12 +618,38 @@ textarea {
       #section-5 #section-5-container {
         grid-template-columns: 30% 70%;
         grid-template-areas: "pic article"; } }
-    #section-5 #section-5-container #section-5-image {
-      grid-area: pic; }
-      #section-5 #section-5-container #section-5-image img {
-        width: 100%; }
-      @media (min-width: 768px) {
-        #section-5 #section-5-container #section-5-image {
-          justify-content: center; } }
-    #section-5 #section-5-container #section-5-article {
-      grid-area: article; }
+  #section-5 #section-5-image {
+    display: flex;
+    grid-area: pic;
+    justify-content: center; }
+    @media (min-width: 768px) {
+      #section-5 #section-5-image {
+        justify-content: center; }
+        #section-5 #section-5-image aside img {
+          width: 100%; } }
+    @media (min-width: 768px) and (min-width: 768px) {
+      #section-5 #section-5-image aside img {
+        display: flex;
+        grid-area: circle-image;
+        width: 318px; } }
+    @media (min-width: 768px) {
+        #section-5 #section-5-image #section-5-article {
+          grid-area: article; } }
+  @media (min-width: 300px) {
+    #section-5 p {
+      font-size: 1rem;
+      line-height: 1.875rem; } }
+  @media (min-width: 768px) {
+    #section-5 p {
+      font-size: 1rem;
+      line-height: 1.875rem;
+      padding-left: 60px;
+      padding-right: 60px; } }
+  @media (min-width: 992px) {
+    #section-5 p {
+      font-size: 1rem;
+      line-height: 1.875rem; } }
+  @media (min-width: 1200px) {
+    #section-5 p {
+      font-size: 1rem;
+      line-height: 1.875rem; } }

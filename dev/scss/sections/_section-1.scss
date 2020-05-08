@@ -2,20 +2,39 @@
     Section 1
 ============= */
 
-#section-1{
-   #title{
-    display: grid;
-    grid-template-columns: 15px auto 15px;
-    grid-template-areas: ". h1 .";
-    
-   }
-    h1{
-        grid-area: h1;
+#section-1 {
+    background-image: url('../img/section-1/hero-1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 50vh;
+    width: 100%;
+
+    @include md{
+        height: 60vh;
     }
-    
-        img{
-        width: 100%;
+
+    @include lg{
+        height: 70vh;
     }
-    
-   
+
+    @include xl{
+        height: 70vh;
     }
+    // #title {
+    //     display: grid;
+    //     grid-template-columns: 15px auto 15px;
+    //     grid-template-areas: ". h1 .";
+
+    // }
+
+    // h1 {
+    //     grid-area: h1;
+    // }
+
+    // img {
+    //     width: 100%;
+    // }
+
+
+}

@@ -1,3 +1,28 @@
 /* =============
     Footer
 ============= */
+#footer{
+    background-color: $rust;
+    
+
+    ul{
+        margin-top: 50;
+        margin-bottom: 0;
+        margin-left: 50%;
+        background-color: $rust;
+        display: flex;
+        justify-content: space-between;
+        // flex-direction: row;
+        // align-content: center;
+        align-items: flex-end;
+        color: white;
+        
+        img{
+            display: flex;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            
+
+        }
+    }
+}
