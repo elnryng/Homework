@@ -38,7 +38,7 @@
 		"oAP": "/deploy/img/section-1/hero-1.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/deploy/img/section-2/left-side.jpg": {
@@ -49,7 +49,7 @@
 		"oAP": "/deploy/img/section-2/left-side.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/deploy/img/section-3/hero-2.jpg": {
@@ -60,7 +60,7 @@
 		"oAP": "/deploy/img/section-3/hero-2.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/deploy/img/section-4/gallery-1.jpg": {
@@ -71,7 +71,7 @@
 		"oAP": "/deploy/img/section-4/gallery-1.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/deploy/img/section-4/gallery-2.jpg": {
@@ -82,7 +82,7 @@
 		"oAP": "/deploy/img/section-4/gallery-2.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/deploy/img/section-4/gallery-3.jpg": {
@@ -93,7 +93,7 @@
 		"oAP": "/deploy/img/section-4/gallery-3.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/deploy/img/section-5/circle-mask.png": {
@@ -133,6 +133,14 @@
 		"oA": 1,
 		"oAP": "/dev/footer.html",
 		"oF": 1
+		},
+	"/dev/header.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/deploy/header.html",
+		"oF": 3
 		},
 	"/dev/index.kit": {
 		"cB": 0,
@@ -428,7 +436,7 @@
 "projectAttributes": {
 	"creationDate": 608848628.97119498,
 	"displayValue": "Homework",
-	"displayValueWasSetByUser": 0,
+	"displayValueWasSetByUser": 1,
 	"iconImageName": "brackets-unblue",
 	"iconImageWasSetByUser": 0
 	},
