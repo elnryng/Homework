@@ -30,9 +30,7 @@
             "pic"
             "article";
         grid-gap: 20px;
-        // @include md {
-        //     grid-template-rows: 2;
-        // }
+       
 
         @include lg {
             grid-template-columns: 30% 70%;
@@ -46,6 +44,7 @@
         display: flex;
         grid-area: pic;
         justify-content: center;
+        margin-bottom: 20px;
 
         @include md {
             justify-content: center;
@@ -62,33 +61,23 @@
                         grid-area: circle-image;
                         width: 318px;
                         
+                        
                     }
 
-                    //     align-content: center;
-                    // }
+                    
                 }
 
-                // @include md {
-                //     justify-content: center;
-
-                // }
-
-                // //  }
+                
 
             }
 
             #section-5-article {
-                //display: grid;
+                
                 grid-area: article;
 
                 
                 
-                // grid-template-columns: 15px auto 15px;
-                // grid-template-areas: ". paragraph .";
-
-                // p {
-                //     grid-area: paragraph;
-                // }
+                
 
             }
         }

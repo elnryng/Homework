@@ -9,6 +9,7 @@
     background-position: center;
     height: 50vh;
     width: 100%;
+    margin-top: 78px;
 
     @include md{
         height: 60vh;
@@ -21,20 +22,7 @@
     @include xl{
         height: 70vh;
     }
-    // #title {
-    //     display: grid;
-    //     grid-template-columns: 15px auto 15px;
-    //     grid-template-areas: ". h1 .";
-
-    // }
-
-    // h1 {
-    //     grid-area: h1;
-    // }
-
-    // img {
-    //     width: 100%;
-    // }
+   
 
 
 }

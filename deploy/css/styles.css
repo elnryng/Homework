@@ -318,7 +318,8 @@ template {
     Base
 ============= */
 ul {
-  padding: 0; }
+  padding: 0;
+  margin: 0; }
   ul li {
     list-style: none; }
 
@@ -354,9 +355,79 @@ textarea {
 /* =============
     Navigation
 ============= */
+#nav-container ul {
+  height: 100%;
+  text-align: right; }
+  @media (min-width: 992px) {
+    #nav-container ul {
+      display: flex;
+      justify-content: flex-end; } }
+  #nav-container ul li {
+    margin-bottom: 20px; }
+    @media (min-width: 992px) {
+      #nav-container ul li {
+        align-items: center;
+        display: flex;
+        margin: 0px 30px 0 0; } }
+    #nav-container ul li a:link,
+    #nav-container ul li a:visited {
+      color: #fff;
+      text-decoration: none;
+      transition: 0.25s; }
+      @media (min-width: 992px) {
+        #nav-container ul li a:link,
+        #nav-container ul li a:visited {
+          color: #A14A39; } }
+    #nav-container ul li a:hover,
+    #nav-container ul li a:active {
+      color: #000; }
+
 /* =============
     Header
 ============= */
+/* =============
+    Header
+============= */
+header {
+  background-color: #fff;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%; }
+  header > div {
+    display: grid;
+    grid-template-areas: "logo burger" "nav nav";
+    grid-template-columns: 80% auto; }
+    @media (min-width: 992px) {
+      header > div {
+        grid-template-areas: "logo nav";
+        grid-template-columns: 20% auto; } }
+    header > div #logo-container {
+      grid-area: logo;
+      font-family: 'Playfair Display', serif;
+      padding: 0 20px;
+      color: #A14A39; }
+    header > div #burger-container {
+      align-items: center;
+      display: flex;
+      grid-area: burger;
+      justify-content: flex-end;
+      padding: 0 20px;
+      color: #A14A39; }
+      @media (min-width: 992px) {
+        header > div #burger-container {
+          display: none !important; } }
+      header > div #burger-container i {
+        cursor: pointer; }
+    header > div #nav-container {
+      background-color: #A14A39;
+      display: none;
+      grid-area: nav;
+      padding: 20px; }
+      @media (min-width: 992px) {
+        header > div #nav-container {
+          background-color: #fff;
+          display: block !important; } }
 /* =============
     Footer
 ============= */
@@ -385,7 +456,8 @@ textarea {
   background-repeat: no-repeat;
   background-position: center;
   height: 50vh;
-  width: 100%; }
+  width: 100%;
+  margin-top: 78px; }
   @media (min-width: 768px) {
     #section-1 {
       height: 60vh; } }
@@ -621,7 +693,8 @@ textarea {
   #section-5 #section-5-image {
     display: flex;
     grid-area: pic;
-    justify-content: center; }
+    justify-content: center;
+    margin-bottom: 20px; }
     @media (min-width: 768px) {
       #section-5 #section-5-image {
         justify-content: center; }
