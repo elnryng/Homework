@@ -30,7 +30,7 @@
             "pic"
             "article";
         grid-gap: 20px;
-       
+
 
         @include lg {
             grid-template-columns: 30% 70%;
@@ -50,57 +50,58 @@
             justify-content: center;
 
             aside {
-                
+
 
                 img {
-                    
+
                     width: 100%;
 
                     @include md {
                         display: flex;
                         grid-area: circle-image;
                         width: 318px;
-                        
-                        
+
+
                     }
 
-                    
+
                 }
 
-                
+
 
             }
 
             #section-5-article {
-                
+
                 grid-area: article;
 
-                
-                
-                
+
+
+
 
             }
         }
     }
-    p{
-        @include sm{
+
+    p {
+        @include sm {
             font-size: rem-calc(16);
             line-height: rem-calc(30);
         }
 
-        @include md{
+        @include md {
             font-size: rem-calc(16);
             line-height: rem-calc(30);
             padding-left: 60px;
             padding-right: 60px;
         }
 
-        @include lg{
+        @include lg {
             font-size: rem-calc(16);
             line-height: rem-calc(30);
         }
 
-        @include xl{
+        @include xl {
             font-size: rem-calc(16);
             line-height: rem-calc(30);
         }

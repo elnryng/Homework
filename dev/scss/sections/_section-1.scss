@@ -11,18 +11,18 @@
     width: 100%;
     margin-top: 78px;
 
-    @include md{
+    @include md {
         height: 60vh;
     }
 
-    @include lg{
+    @include lg {
         height: 70vh;
     }
 
-    @include xl{
+    @include xl {
         height: 70vh;
     }
-   
+
 
 
 }

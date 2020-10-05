@@ -16,31 +16,31 @@
         grid-area: h2;
         text-align: center;
 
-        @include sm{
-            h2{
-            font-size: rem-calc(25);
-            line-height: rem-calc(33);
+        @include sm {
+            h2 {
+                font-size: rem-calc(25);
+                line-height: rem-calc(33);
             }
         }
 
-        @include md{
-            h2{
-            font-size: rem-calc(35); 
-            line-height: rem-calc(48);
+        @include md {
+            h2 {
+                font-size: rem-calc(35);
+                line-height: rem-calc(48);
             }
         }
 
-        @include lg{
-            h2{
-            font-size: rem-calc(52); 
-            line-height: rem-calc(63);
+        @include lg {
+            h2 {
+                font-size: rem-calc(52);
+                line-height: rem-calc(63);
             }
         }
 
-        @include xl{
-            h2{
-            font-size: rem-calc(52); 
-            line-height: rem-calc(63);
+        @include xl {
+            h2 {
+                font-size: rem-calc(52);
+                line-height: rem-calc(63);
             }
         }
     }
@@ -51,10 +51,11 @@
     grid-template-columns: 15px auto 15px;
     grid-template-areas: '. section-4 .';
     margin-top: 41px;
-    // margin-right: 20px;
+
     @include xl {
         grid-template-columns: auto 1200px auto;
     }
+
     ul {
         grid-area: section-4;
         display: grid;
@@ -72,8 +73,7 @@
         @include md {
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: repeat(3, 340px);
-            // grid-template-columns: 50% 50%;
-            // grid-template-columns: 50% auto;
+
 
             grid-template-areas:
                 "g1 g1"
@@ -85,8 +85,7 @@
             grid-template-columns: 60% 40%;
             grid-template-rows: repeat(2, 340px);
             margin-right: 20px;
-            // grid-template-columns: 50% 50%;
-            // grid-template-columns: 50% auto;
+
 
             grid-template-areas:
                 "g1 g2"
@@ -109,20 +108,20 @@
         #g1 {
             background-image: url(../img/section-4/gallery-1.jpg);
             grid-area: g1;
-            // border: 1px solid red;
+
         }
 
         #g2 {
             background-image: url(../img/section-4/gallery-2.jpg);
             grid-area: g2;
-            
+
         }
 
         #g3 {
             background-image: url(../img/section-4/gallery-3.jpg);
-            
+
             grid-area: g3;
-            
+
 
         }
     }

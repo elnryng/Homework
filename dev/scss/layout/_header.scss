@@ -4,59 +4,59 @@
 /* =============
     Header
 ============= */
- header {
+header {
 
     background-color: $white;
-         left: 0;
-         position: fixed;
-         top: 0;
-         width: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
 
     >div {
-                  display: grid;
-                 grid-template-areas: "logo burger"
-                     "nav nav";
-                 grid-template-columns: 80% auto;
+        display: grid;
+        grid-template-areas: "logo burger"
+            "nav nav";
+        grid-template-columns: 80% auto;
 
         @include lg {
-                          grid-template-areas: "logo nav";
-                         grid-template-columns: 20% auto;
-                 }
+            grid-template-areas: "logo nav";
+            grid-template-columns: 20% auto;
+        }
 
-         #logo-container {
-                          grid-area: logo;
-                          font-family: 'Playfair Display', serif;
-                         padding: 0 20px;
-                         color: $rust;
-                 }
+        #logo-container {
+            grid-area: logo;
+            font-family: 'Playfair Display', serif;
+            padding: 0 20px;
+            color: $rust;
+        }
 
-         #burger-container {
-             align-items: center;
-             display: flex;
-             grid-area: burger;
-             justify-content: flex-end;
-             padding: 0 20px;
-             color: $rust;
+        #burger-container {
+            align-items: center;
+            display: flex;
+            grid-area: burger;
+            justify-content: flex-end;
+            padding: 0 20px;
+            color: $rust;
 
-             @include lg {
-                 display: none !important;
-             }
+            @include lg {
+                display: none !important;
+            }
 
-             i {
-                 cursor: pointer;
-             }
-         }
+            i {
+                cursor: pointer;
+            }
+        }
 
-         #nav-container {
-             background-color: $rust;
-             display: none;
-             grid-area: nav;
-             padding: 20px;
+        #nav-container {
+            background-color: $rust;
+            display: none;
+            grid-area: nav;
+            padding: 20px;
 
-             @include lg {
-                 background-color: $white;
-                 display: block !important;
-             }
-         }
-     }
- }
+            @include lg {
+                background-color: $white;
+                display: block !important;
+            }
+        }
+    }
+}
