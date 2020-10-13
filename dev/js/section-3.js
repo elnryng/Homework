@@ -17,7 +17,7 @@ export function section3Animation(){
         animation: section3TL,
         toggleActions: "play none none none",
         trigger: "#section-3",
-        scrub: 1,
+        scrub: 0,
         start:"top 70%",
         end: "bottom 70%"
     });
